@@ -38,30 +38,33 @@ var AfficherExtensionString = function (texte) {
     return texte.split('.').pop();
 }
 var NombreEspaceString = function (texte) {
-    return 'A completer';
+    return (texte.split(" ").length - 1);
 }
 var InverseString = function (texte) {
-    return 'A completer';
+    return texte.split("").reverse().join("");
 }
 
 /**
  * Exercices sur les nombres et les caluls mathématiques
  */
 var calculPuissance = function (x, y) {
-    return 'A completer';
+    return (x ** y);
 }
 var valeurAbsolue = function (nombre) {
-    return 'A completer';
+    return Math.abs(nombre);
 }
 var valeurAbsolueArray = function (array) {
-    return 'A completer';
+	for (let i = 0; i < array.length; i++) {
+		array[i] = Math.abs(array[i]);
+	}
+  return array;
 }
 var sufaceCercle = function (rayon) {
-    return 'A completer';
+    return Math.ceil(Math.PI * rayon ** 2);
 }
 var hypothenuse = function (ab, ac) {
-    return 'A completer';
+  return Math.sqrt(ab ** 2 + ac ** 2);
 }
 var calculIMC = function (poids, taille) {
-    return 'A completer';
+    return Number((poids / taille ** 2).toFixed(2));
 }
